@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+
+		<div id="beautiful-sea">btn</div>
+		<script src="./js/sea.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		
+			seajs.use(['hello',"m"], function(hello,m) {
+
+				hello.sayHello();
+				console.log(m("body").css("background","red"))
+			});
+//			
+		//seajs.use("./js/hello");
+		</script>
+	</body>
+
+</html>
